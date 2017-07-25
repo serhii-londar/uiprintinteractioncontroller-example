@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     _images = [[NSMutableArray alloc] init];
     
-    for (NSInteger i = 1; i < 26; i++) {
+    for (NSInteger i = 1; i < 7; i++) {
         [_images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)i]]];
     }
     
@@ -32,6 +32,8 @@
     for (UIImage *image in _images) {
         if ([UIPrintInteractionController canPrintData:UIImagePNGRepresentation(image)] == NO) {
             return;
+        } else {
+            NSLog(@"can print image");
         }
     }
     

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/ViewController.m"
-            timestampString = "522690179.203599"
+            timestampString = "522690571.56083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-print:"
             landmarkType = "7">
          </BreakpointContent>
