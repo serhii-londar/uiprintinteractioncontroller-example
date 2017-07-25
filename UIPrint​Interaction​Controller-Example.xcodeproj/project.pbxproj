@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E86DDD731F279BB200E54EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E86DDD721F279BB200E54EEA /* main.m */; };
+		E86DDD761F279BB200E54EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E86DDD751F279BB200E54EEA /* AppDelegate.m */; };
+		E86DDD791F279BB200E54EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86DDD781F279BB200E54EEA /* ViewController.m */; };
+		E86DDD7C1F279BB200E54EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DDD7A1F279BB200E54EEA /* Main.storyboard */; };
+		E86DDD7E1F279BB200E54EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86DDD7D1F279BB200E54EEA /* Assets.xcassets */; };
+		E86DDD811F279BB200E54EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DDD7F1F279BB200E54EEA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E86DDD6E1F279BB200E54EEA /* UIPrint​Interaction​Controller-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIPrint​Interaction​Controller-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86DDD721F279BB200E54EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E86DDD741F279BB200E54EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E86DDD751F279BB200E54EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E86DDD771F279BB200E54EEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E86DDD781F279BB200E54EEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E86DDD7B1F279BB200E54EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E86DDD7D1F279BB200E54EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E86DDD801F279BB200E54EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E86DDD821F279BB200E54EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E86DDD6B1F279BB200E54EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E86DDD651F279BB200E54EEA = {
+			isa = PBXGroup;
+			children = (
+				E86DDD701F279BB200E54EEA /* UIPrint​Interaction​Controller-Example */,
+				E86DDD6F1F279BB200E54EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E86DDD6F1F279BB200E54EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E86DDD6E1F279BB200E54EEA /* UIPrint​Interaction​Controller-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E86DDD701F279BB200E54EEA /* UIPrint​Interaction​Controller-Example */ = {
+			isa = PBXGroup;
+			children = (
+				E86DDD741F279BB200E54EEA /* AppDelegate.h */,
+				E86DDD751F279BB200E54EEA /* AppDelegate.m */,
+				E86DDD771F279BB200E54EEA /* ViewController.h */,
+				E86DDD781F279BB200E54EEA /* ViewController.m */,
+				E86DDD7A1F279BB200E54EEA /* Main.storyboard */,
+				E86DDD7D1F279BB200E54EEA /* Assets.xcassets */,
+				E86DDD7F1F279BB200E54EEA /* LaunchScreen.storyboard */,
+				E86DDD821F279BB200E54EEA /* Info.plist */,
+				E86DDD711F279BB200E54EEA /* Supporting Files */,
+			);
+			path = "UIPrint​Interaction​Controller-Example";
+			sourceTree = "<group>";
+		};
+		E86DDD711F279BB200E54EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E86DDD721F279BB200E54EEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E86DDD6D1F279BB200E54EEA /* UIPrint​Interaction​Controller-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86DDD851F279BB200E54EEA /* Build configuration list for PBXNativeTarget "UIPrint​Interaction​Controller-Example" */;
+			buildPhases = (
+				E86DDD6A1F279BB200E54EEA /* Sources */,
+				E86DDD6B1F279BB200E54EEA /* Frameworks */,
+				E86DDD6C1F279BB200E54EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIPrint​Interaction​Controller-Example";
+			productName = "UIPrint​Interaction​Controller-Example";
+			productReference = E86DDD6E1F279BB200E54EEA /* UIPrint​Interaction​Controller-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E86DDD661F279BB200E54EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "serhii-londar";
+				TargetAttributes = {
+					E86DDD6D1F279BB200E54EEA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 22AFPHX3AU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E86DDD691F279BB200E54EEA /* Build configuration list for PBXProject "UIPrint​Interaction​Controller-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E86DDD651F279BB200E54EEA;
+			productRefGroup = E86DDD6F1F279BB200E54EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E86DDD6D1F279BB200E54EEA /* UIPrint​Interaction​Controller-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E86DDD6C1F279BB200E54EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DDD811F279BB200E54EEA /* LaunchScreen.storyboard in Resources */,
+				E86DDD7E1F279BB200E54EEA /* Assets.xcassets in Resources */,
+				E86DDD7C1F279BB200E54EEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E86DDD6A1F279BB200E54EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DDD791F279BB200E54EEA /* ViewController.m in Sources */,
+				E86DDD761F279BB200E54EEA /* AppDelegate.m in Sources */,
+				E86DDD731F279BB200E54EEA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E86DDD7A1F279BB200E54EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86DDD7B1F279BB200E54EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E86DDD7F1F279BB200E54EEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86DDD801F279BB200E54EEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E86DDD831F279BB200E54EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E86DDD841F279BB200E54EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E86DDD861F279BB200E54EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22AFPHX3AU;
+				INFOPLIST_FILE = "UIPrint​Interaction​Controller-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serhii-londar.UIPrint-Interaction-Controller-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E86DDD871F279BB200E54EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22AFPHX3AU;
+				INFOPLIST_FILE = "UIPrint​Interaction​Controller-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serhii-londar.UIPrint-Interaction-Controller-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E86DDD691F279BB200E54EEA /* Build configuration list for PBXProject "UIPrint​Interaction​Controller-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DDD831F279BB200E54EEA /* Debug */,
+				E86DDD841F279BB200E54EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86DDD851F279BB200E54EEA /* Build configuration list for PBXNativeTarget "UIPrint​Interaction​Controller-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DDD861F279BB200E54EEA /* Debug */,
+				E86DDD871F279BB200E54EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E86DDD661F279BB200E54EEA /* Project object */;
+}
