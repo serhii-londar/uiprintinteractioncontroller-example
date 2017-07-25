@@ -7,10 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "HTMLPrinter.h"
 
-@interface ViewController () {
-    NSMutableArray<UIImage *> *_images;
-}
+@interface ViewController ()<UIWebViewDelegate> 
 
 @end
 
@@ -18,37 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    _images = [[NSMutableArray alloc] init];
-    
-    for (NSInteger i = 1; i < 7; i++) {
-        [_images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)i]]];
-    }
-    
-    
 }
     
-- (IBAction)print:(id)sender {
-    for (UIImage *image in _images) {
-        if ([UIPrintInteractionController canPrintData:UIImagePNGRepresentation(image)] == NO) {
-            return;
-        } else {
-            NSLog(@"can print image");
-        }
-    }
+- (IBAction)printFromDocumets:(id)sender {
+    NSURL *documentsUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL *printUrl = [documentsUrl URLByAppendingPathComponent:@"Print"];
     
-    UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-    printInfo.jobName = @"Printing images";
-    printInfo.outputType = UIPrintInfoOutputPhoto;
-    
-    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
-    printController.printInfo = printInfo;
-    
-    printController.printingItems = _images;
-    
-
-    [printController presentAnimated:true completionHandler: nil];
-
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:printUrl.absoluteString];
 }
+
+- (IBAction)printFromBundle:(id)sender {
+    NSString *indexPath = [[[NSBundle mainBundle] bundleURL] absoluteString];
+    
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:indexPath];
+}
+
 
 @end

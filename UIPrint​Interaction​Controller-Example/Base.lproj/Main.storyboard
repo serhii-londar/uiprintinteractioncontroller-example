@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,22 +22,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaZ-VE-Prk">
-                                <rect key="frame" x="144" y="318" width="86" height="30"/>
-                                <state key="normal" title="Print Images"/>
+                                <rect key="frame" x="110" y="52" width="154" height="30"/>
+                                <state key="normal" title="Print From Documents"/>
                                 <connections>
-                                    <action selector="print:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uv-vG-I4f"/>
+                                    <action selector="printFromDocumets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsD-Mh-v06"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6x-zw-Tr4">
+                                <rect key="frame" x="126" y="114" width="123" height="30"/>
+                                <state key="normal" title="Print From Bundle"/>
+                                <connections>
+                                    <action selector="printFromBundle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEh-wF-GNW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SaZ-VE-Prk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FyR-VD-Q3o"/>
-                            <constraint firstItem="SaZ-VE-Prk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="auU-2a-JcY"/>
+                            <constraint firstItem="q6x-zw-Tr4" firstAttribute="top" secondItem="SaZ-VE-Prk" secondAttribute="bottom" constant="32" id="lHI-tp-f7L"/>
+                            <constraint firstItem="q6x-zw-Tr4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oFJ-3t-A84"/>
+                            <constraint firstItem="SaZ-VE-Prk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="oRk-BM-bzU"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="120.98950524737631"/>
         </scene>
     </scenes>
 </document>
