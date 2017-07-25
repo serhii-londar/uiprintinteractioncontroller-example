@@ -21,15 +21,15 @@
     
 - (IBAction)printFromDocumets:(id)sender {
     NSURL *documentsUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    NSURL *printUrl = [documentsUrl URLByAppendingPathComponent:@"Print"];
+    NSURL *printFolderUrl = [documentsUrl URLByAppendingPathComponent:@"Print"];
     
-    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:printUrl.absoluteString];
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:printFolderUrl.absoluteString];
 }
 
 - (IBAction)printFromBundle:(id)sender {
-    NSString *indexPath = [[[NSBundle mainBundle] bundleURL] absoluteString];
+    NSString *indexHtmlStringPath = [[[NSBundle mainBundle] bundleURL] absoluteString];
     
-    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:indexPath];
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:indexHtmlStringPath];
 }
 
 
