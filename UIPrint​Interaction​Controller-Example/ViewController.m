@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    NSMutableArray<UIImage *> *_images;
+}
 
 @end
 
@@ -17,29 +19,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _images = [[NSMutableArray alloc] init];
+    
+    for (NSInteger i = 1; i < 26; i++) {
+        [_images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)i]]];
+    }
+    
+    
 }
     
 - (IBAction)print:(id)sender {
-    
-    
-    if ([UIPrintInteractionController canPrintURL:self.imageURL]) {
-        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-        printInfo.jobName = self.imageURL.lastPathComponent;
-        printInfo.outputType = UIPrintInfoOutputGeneral;
-        
-        UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
-        printController.printInfo = printInfo;
-        
-        printController.printingItem = self.imageURL;
-        
-        [printController presentAnimated:true completionHandler: nil];
+    for (UIImage *image in _images) {
+        if ([UIPrintInteractionController canPrintData:UIImagePNGRepresentation(image)] == NO) {
+            return;
+        }
     }
+    
+    UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+    printInfo.jobName = @"Printing images";
+    printInfo.outputType = UIPrintInfoOutputPhoto;
+    
+    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
+    printController.printInfo = printInfo;
+    
+    printController.printingItems = _images;
+    
+
+    [printController presentAnimated:true completionHandler: nil];
+
 }
 
 @end
