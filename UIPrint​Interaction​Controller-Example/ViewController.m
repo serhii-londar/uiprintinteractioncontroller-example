@@ -28,18 +28,18 @@
 - (IBAction)print:(id)sender {
     
     
-//    if ([UIPrintInteractionController canPrintURL:self.imageURL]) {
-//        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-//        printInfo.jobName = self.imageURL.lastPathComponent;
-//        printInfo.outputType = UIPrintInfoOutputGeneral;
-//        
-//        UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
-//        printController.printInfo = printInfo;
-//        
-//        printController.printingItem = self.imageURL;
-//        
-//        [printController presentAnimated:true completionHandler: nil];
-//    }
+    if ([UIPrintInteractionController canPrintURL:self.imageURL]) {
+        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+        printInfo.jobName = self.imageURL.lastPathComponent;
+        printInfo.outputType = UIPrintInfoOutputGeneral;
+        
+        UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
+        printController.printInfo = printInfo;
+        
+        printController.printingItem = self.imageURL;
+        
+        [printController presentAnimated:true completionHandler: nil];
+    }
 }
 
 @end
