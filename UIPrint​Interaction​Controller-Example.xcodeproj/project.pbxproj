@@ -25,7 +25,7 @@
 		9202C2511F27C350004C75E9 /* Line7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9202C23A1F27C350004C75E9 /* Line7.jpg */; };
 		9202C2521F27C350004C75E9 /* Line8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9202C23B1F27C350004C75E9 /* Line8.jpg */; };
 		9202C2531F27C350004C75E9 /* Line9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9202C23C1F27C350004C75E9 /* Line9.jpg */; };
-		9202C25B1F27D793004C75E9 /* HTMLPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9202C25A1F27D793004C75E9 /* HTMLPrinter.m */; };
+		9202C25F1F27DD6E004C75E9 /* HTMLPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9202C25E1F27DD6E004C75E9 /* HTMLPrinter.m */; };
 		E86DDD731F279BB200E54EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E86DDD721F279BB200E54EEA /* main.m */; };
 		E86DDD761F279BB200E54EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E86DDD751F279BB200E54EEA /* AppDelegate.m */; };
 		E86DDD791F279BB200E54EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86DDD781F279BB200E54EEA /* ViewController.m */; };
@@ -53,8 +53,8 @@
 		9202C23A1F27C350004C75E9 /* Line7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Line7.jpg; sourceTree = "<group>"; };
 		9202C23B1F27C350004C75E9 /* Line8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Line8.jpg; sourceTree = "<group>"; };
 		9202C23C1F27C350004C75E9 /* Line9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Line9.jpg; sourceTree = "<group>"; };
-		9202C2591F27D793004C75E9 /* HTMLPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLPrinter.h; sourceTree = "<group>"; };
-		9202C25A1F27D793004C75E9 /* HTMLPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLPrinter.m; sourceTree = "<group>"; };
+		9202C25D1F27DD6E004C75E9 /* HTMLPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLPrinter.h; sourceTree = "<group>"; };
+		9202C25E1F27DD6E004C75E9 /* HTMLPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLPrinter.m; sourceTree = "<group>"; };
 		E86DDD6E1F279BB200E54EEA /* UIPrint​Interaction​Controller-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIPrint​Interaction​Controller-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86DDD721F279BB200E54EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E86DDD741F279BB200E54EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +103,15 @@
 			path = PrintResources;
 			sourceTree = "<group>";
 		};
+		9202C25C1F27DD6E004C75E9 /* PrintSources */ = {
+			isa = PBXGroup;
+			children = (
+				9202C25D1F27DD6E004C75E9 /* HTMLPrinter.h */,
+				9202C25E1F27DD6E004C75E9 /* HTMLPrinter.m */,
+			);
+			path = PrintSources;
+			sourceTree = "<group>";
+		};
 		E86DDD651F279BB200E54EEA = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +131,7 @@
 		E86DDD701F279BB200E54EEA /* UIPrint​Interaction​Controller-Example */ = {
 			isa = PBXGroup;
 			children = (
+				9202C25C1F27DD6E004C75E9 /* PrintSources */,
 				9202C22A1F27C350004C75E9 /* PrintResources */,
 				E86DDD741F279BB200E54EEA /* AppDelegate.h */,
 				E86DDD751F279BB200E54EEA /* AppDelegate.m */,
@@ -132,8 +142,6 @@
 				E86DDD7F1F279BB200E54EEA /* LaunchScreen.storyboard */,
 				E86DDD821F279BB200E54EEA /* Info.plist */,
 				E86DDD711F279BB200E54EEA /* Supporting Files */,
-				9202C2591F27D793004C75E9 /* HTMLPrinter.h */,
-				9202C25A1F27D793004C75E9 /* HTMLPrinter.m */,
 			);
 			path = "UIPrint​Interaction​Controller-Example";
 			sourceTree = "<group>";
@@ -237,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86DDD791F279BB200E54EEA /* ViewController.m in Sources */,
-				9202C25B1F27D793004C75E9 /* HTMLPrinter.m in Sources */,
+				9202C25F1F27DD6E004C75E9 /* HTMLPrinter.m in Sources */,
 				E86DDD761F279BB200E54EEA /* AppDelegate.m in Sources */,
 				E86DDD731F279BB200E54EEA /* main.m in Sources */,
 			);
