@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "HTMLPrinter.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIWebViewDelegate> 
 
 @end
 
@@ -16,30 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+    
+- (IBAction)printFromDocumets:(id)sender {
+    NSURL *documentsUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL *printUrl = [documentsUrl URLByAppendingPathComponent:@"Print"];
+    
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:printUrl.absoluteString];
 }
 
+- (IBAction)printFromBundle:(id)sender {
+    NSString *indexPath = [[[NSBundle mainBundle] bundleURL] absoluteString];
+    
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:indexPath];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-    
-- (IBAction)print:(id)sender {
-    
-    
-//    if ([UIPrintInteractionController canPrintURL:self.imageURL]) {
-//        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-//        printInfo.jobName = self.imageURL.lastPathComponent;
-//        printInfo.outputType = UIPrintInfoOutputGeneral;
-//        
-//        UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
-//        printController.printInfo = printInfo;
-//        
-//        printController.printingItem = self.imageURL;
-//        
-//        [printController presentAnimated:true completionHandler: nil];
-//    }
-}
 
 @end
