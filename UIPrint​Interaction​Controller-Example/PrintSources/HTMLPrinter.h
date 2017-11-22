@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HTMLPrinter : NSObject
 
-+ (HTMLPrinter *)sharedPrinter;
++ (HTMLPrinter *_Nonnull)sharedPrinter;
 
-- (void)printHTMLWithName:(NSString *)fileName fromFilePath:(NSString *)filePath;
+- (void)printHTMLWithName:(NSString *)fileName fromFilePath:(NSString *)filePath completionHandler:(nullable UIPrintInteractionCompletionHandler)completionHandler;
 
 @end

@@ -23,13 +23,17 @@
     NSURL *documentsUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     NSURL *printFolderUrl = [documentsUrl URLByAppendingPathComponent:@"Print"];
     
-    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:printFolderUrl.absoluteString];
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:printFolderUrl.absoluteString completionHandler:^(UIPrintInteractionController * _Nonnull printInteractionController, BOOL completed, NSError * _Nullable error) {
+        
+    }];
 }
 
 - (IBAction)printFromBundle:(id)sender {
     NSString *indexHtmlStringPath = [[[NSBundle mainBundle] bundleURL] absoluteString];
     
-    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:indexHtmlStringPath];
+    [[HTMLPrinter sharedPrinter] printHTMLWithName:@"index.html" fromFilePath:indexHtmlStringPath completionHandler:^(UIPrintInteractionController * _Nonnull printInteractionController, BOOL completed, NSError * _Nullable error) {
+        
+    }];
 }
 
 

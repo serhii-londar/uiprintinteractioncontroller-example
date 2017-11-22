@@ -7,11 +7,11 @@
 //
 
 #import "HTMLPrinter.h"
-#import <UIKit/UIKit.h>
 
-@interface HTMLPrinter()<UIWebViewDelegate> {
+@interface HTMLPrinter()<UIWebViewDelegate, UIPrintInteractionControllerDelegate> {
     UIWebView *_webView;
     UIPrintInteractionController *_printController;
+    UIPrintInteractionCompletionHandler _completionHandler;
 }
 
 @end
@@ -27,7 +27,8 @@
     return shared;
 }
 
-- (void)printHTMLWithName:(NSString *)fileName fromFilePath:(NSString *)filePath {
+- (void)printHTMLWithName:(NSString *)fileName fromFilePath:(NSString *)filePath completionHandler:(nullable UIPrintInteractionCompletionHandler)completionHandler {
+    _completionHandler = completionHandler;
     NSURL *printUrl = [NSURL URLWithString:filePath];
     NSURL *htmlURL = [printUrl URLByAppendingPathComponent:fileName];
     
@@ -56,7 +57,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [_printController presentAnimated:true completionHandler: nil];
+    [_printController presentAnimated:true completionHandler:_completionHandler];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
