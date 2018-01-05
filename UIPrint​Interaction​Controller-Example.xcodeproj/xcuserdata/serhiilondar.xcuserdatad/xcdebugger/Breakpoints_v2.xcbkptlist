@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/ViewController.m"
-            timestampString = "533083998.433688"
+            timestampString = "533091513.260966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/ViewController.m"
-            timestampString = "533083998.433757"
+            timestampString = "533091513.2614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/PrintSources/HTMLPrinter.m"
-            timestampString = "533083998.435627"
+            timestampString = "533091513.261615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82">
+            startingLineNumber = "68"
+            endingLineNumber = "68">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,11 +56,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/PrintSources/HTMLPrinter.m"
-            timestampString = "533083998.436067"
+            timestampString = "533091513.261661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90">
+            startingLineNumber = "68"
+            endingLineNumber = "68">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/ViewController.m"
+            timestampString = "533091513.261703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-printFromDocumets:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIPrint&#x200b;Interaction&#x200b;Controller-Example/ViewController.m"
+            timestampString = "533091513.261912"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-printFromBundle:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController printFromBundle:]"
+                  moduleName = "UIPrint&#x200b;Interaction&#x200b;Controller-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/serhiilondar/Documents/GitHub/uiprintinteractioncontroller-example/UIPrint%E2%80%8BInteraction%E2%80%8BController-Example/ViewController.m"
+                  timestampString = "533091513.327876"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "157">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[ViewController printFromBundle:]_block_invoke"
+                  moduleName = "UIPrint&#x200b;Interaction&#x200b;Controller-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/serhiilondar/Documents/GitHub/uiprintinteractioncontroller-example/UIPrint%E2%80%8BInteraction%E2%80%8BController-Example/ViewController.m"
+                  timestampString = "533091513.330026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -13,6 +13,6 @@
 
 + (HTMLPrinter *_Nonnull)sharedPrinter;
 
-- (void)printHTMLWithName:(NSString *)fileName fromFilePath:(NSString *)filePath completionHandler:(nullable UIPrintInteractionCompletionHandler)completionHandler;
+- (void)printHTMLWithName:(NSString *_Nonnull)fileName fromFilePath:(NSString *_Nonnull)filePath completionHandler:(nullable UIPrintInteractionCompletionHandler)completionHandler;
 
 @end

@@ -18,7 +18,7 @@
 
 @implementation HTMLPrinter
 
-+ (HTMLPrinter *)sharedPrinter {
++ (HTMLPrinter *_Nonnull)sharedPrinter {
     static HTMLPrinter *shared = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -27,7 +27,7 @@
     return shared;
 }
 
-- (void)printHTMLWithName:(NSString *)fileName fromFilePath:(NSString *)filePath completionHandler:(nullable UIPrintInteractionCompletionHandler)completionHandler {
+- (void)printHTMLWithName:(NSString *_Nonnull)fileName fromFilePath:(NSString *_Nonnull)filePath completionHandler:(nullable UIPrintInteractionCompletionHandler)completionHandler {
     _completionHandler = completionHandler;
     NSURL *printUrl = [NSURL URLWithString:filePath];
     NSURL *htmlURL = [printUrl URLByAppendingPathComponent:fileName];
